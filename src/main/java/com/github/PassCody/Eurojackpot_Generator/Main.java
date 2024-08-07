@@ -8,9 +8,9 @@ public class Main {
     private GeneratorMain generator;
 
     public Main() {
-        for (int i = 0; i < 140000000; i++) {
-            generator = new GeneratorMain();
-        }
+        generator = new GeneratorMain();
+        System.out.println(generator.lotto.getNormalNumbers());
+        System.out.println(generator.lotto.getEuroNumbers());
     }
 
     public static void main(String[] args) {
